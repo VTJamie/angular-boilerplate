@@ -7,11 +7,12 @@ define([
     'angular-bootstrap-ui',
     'angular-utils',
     'angular-file-upload',
-    'view_resolver_module'
+    'view_resolver_module',
+    'famous-angular'
 ], function ($, angular) {
     "use strict";
 
-    var app = angular.module('App', ['angularFileUpload', 'ui.router', 'viewResolver', 'modalResolver', 'ui.mask', 'ui.validate', 'ui.bootstrap', 'snap']);
+    var app = angular.module('App', ['angularFileUpload', 'ui.router', 'viewResolver', 'modalResolver', 'ui.mask', 'ui.validate', 'ui.bootstrap', 'snap', 'famous.angular']);
     app.config(['$controllerProvider', '$compileProvider', '$filterProvider', '$provide', '$httpProvider',
         function ($controllerProvider, $compileProvider, $filterProvider, $provide, $httpProvider) {
 

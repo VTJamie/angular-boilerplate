@@ -9,7 +9,8 @@
     "angular-bootstrap": "*",
     "angular-file-upload": "*",
     "angular-ui-utils": "*",
-    "angular-snap": "*"
+    "angular-snap": "*",
+    "famous-angular" : "*"
   },
   "resolutions": {
     "angular": "~1.3"

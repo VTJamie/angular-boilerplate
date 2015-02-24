@@ -15,7 +15,11 @@ require.config({
         'view_resolver_module'              :   'modules/view_resolver',
         'modal_resolver_module'             :   'modules/modal_resolver',
         'storage_service'                   :   'services/storage_service',
-        'url_service'                       :   'services/url_service'
+        'url_service'                       :   'services/url_service',
+
+        'famous-angular'                    :   '../libs/famous-angular/famous-angular',
+        'famous'                            :   '../libs/famous/famous-global',
+        'famous-global-fix'                 :   '../libs/famous/famous-global-fix'
     },
     shim: {
         'angular': {
@@ -37,6 +41,9 @@ require.config({
         },
         'angularSnap': {
             deps: ['angular', 'jquery', 'snap']
+        },
+        'famous-angular': {
+            deps: ['angular', 'famous-global-fix']
         }
     },
     map: {
